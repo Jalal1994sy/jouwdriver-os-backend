@@ -1,0 +1,21 @@
+{
+  "name": "jouw-taxi-os-26-full",
+  "private": true,
+  "version": "1.0.3",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "node server.js",
+    "dev:client": "cd client && npm run dev",
+    "postinstall": "cd client && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^9.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "node-fetch": "^2.7.0"
+  }
+}
